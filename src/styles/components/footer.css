@@ -1,0 +1,3 @@
+footer ul li a {
+    @apply hover:text-brand-alt transition-colors duration-200;
+}

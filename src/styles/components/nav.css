@@ -1,0 +1,31 @@
+nav ul li {
+    @apply relative;
+}
+
+nav ul li a.menu-anchor {
+    @apply flex mx-4 my-2 justify-center lg:text-left lg:border-b-3 lg:border-transparent transition-colors duration-200;
+}
+
+nav ul li a.menu-anchor:hover {
+    @apply text-brand-alt lg:text-inherit lg:border-b-3 lg:border-brand-alt;
+}
+
+nav ul li.active a.menu-anchor {
+    @apply text-brand-alt lg:text-inherit lg:border-b-3 lg:border-brand-alt;
+}
+
+nav ul li:hover ul.sub-menu {
+    @apply lg:visible;
+}
+
+nav ul li ul.sub-menu {
+    @apply mb-4 lg:mb-0 mt-2 pb-4 lg:pb-0 border-b-2 border-slate-200 lg:border-none lg:invisible lg:absolute lg:bg-slate-200 right-0 lg:whitespace-nowrap;
+}
+
+nav ul li ul.sub-menu li {
+    
+}
+
+nav ul li ul.sub-menu li a.menu-anchor{
+    @apply flex px-4 py-2 whitespace-nowrap;
+}

@@ -1,0 +1,509 @@
+{
+    "key": "group_62682b13b3096",
+    "title": "TEMPLATE: Row Settings",
+    "fields": [
+        {
+            "key": "field_62686e10559d1",
+            "label": "Row Settings",
+            "name": "",
+            "type": "accordion",
+            "instructions": "<h4 style=\"color: #51606A;\">Click to toggle settings view.<\/h4>\r\n\r\n<p>These settings adjust the spacing, alignment and column width of a row.<\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_62686e2a559d2",
+            "label": "Row Settings",
+            "name": "row_settings",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62686cc56567b",
+                    "label": "<h3 style=\"font-weight: bold; text-transform: uppercase;\">Spacing settings<\/h3>",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "<h4 style=\"color: #51606A;\">Click to open settings.<\/h4>\r\n<ul>\r\n<li>- Margin is the space around a row's content outside its background colour.<\/li>\r\n<li>- Padding is the space around a row's content inside its background colour.<\/li>\r\n<\/ul>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_62682b5e1fd7d",
+                    "label": "Top",
+                    "name": "top",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62682b6d1fd7e",
+                            "label": "Top margin",
+                            "name": "top_margin",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pt-0": "Default (Row dependant)",
+                                "pt-4": "1 (16px)",
+                                "pt-8": "2 (32px)",
+                                "pt-12": "3 (48px)",
+                                "pt-16": "4 (64px)",
+                                "pt-20": "5 (80px)",
+                                "pt-24": "6 (96px)",
+                                "pt-28": "7 (112px)"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "pt-0",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_62682bce1fd7f",
+                            "label": "Top padding",
+                            "name": "top_padding",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pt-0": "Default (Row dependant)",
+                                "pt-4": "1 (16px)",
+                                "pt-8": "2 (32px)",
+                                "pt-12": "3 (48px)",
+                                "pt-16": "4 (64px)",
+                                "pt-20": "5 (80px)",
+                                "pt-24": "6 (96px)",
+                                "pt-28": "7 (112px)"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_626868bf95679",
+                    "label": "Bottom",
+                    "name": "bottom",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_626868bf9567a",
+                            "label": "Bottom margin",
+                            "name": "bottom_margin",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pb-0": "Default (Row dependant)",
+                                "pb-4": "1 (16px)",
+                                "pb-8": "2 (32px)",
+                                "pb-12": "3 (48px)",
+                                "pb-16": "4 (64px)",
+                                "pb-20": "5 (80px)",
+                                "pb-24": "6 (96px)",
+                                "pb-28": "7 (112px)"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_626868bf9567b",
+                            "label": "Bottom padding",
+                            "name": "bottom_padding",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pb-0": "Default (Row dependant)",
+                                "pb-4": "1 (16px)",
+                                "pb-8": "2 (32px)",
+                                "pb-12": "3 (48px)",
+                                "pb-16": "4 (64px)",
+                                "pb-20": "5 (80px)",
+                                "pb-24": "6 (96px)",
+                                "pb-28": "7 (112px)"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_626868ea9567f",
+                    "label": "Left",
+                    "name": "left",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_626868ea95680",
+                            "label": "Left margin",
+                            "name": "left_margin",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pl-0": "Default (Row dependant)",
+                                "pl-4": "1 (16px)",
+                                "pl-8": "2 (32px)",
+                                "pl-12": "3 (48px)",
+                                "pl-16": "4 (64px)",
+                                "pl-1\/12": "8.33% (1\/12 container width)",
+                                "pl-1\/8": "12.5% (1\/8 container width)",
+                                "pl-1\/4": "25% (1\/4 container width)"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_626868ea95681",
+                            "label": "Left padding",
+                            "name": "left_padding",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pl-0": "Default (Row dependant)",
+                                "pl-4": "1 (16px)",
+                                "pl-8": "2 (32px)",
+                                "pl-12": "3 (48px)",
+                                "pl-16": "4 (64px)",
+                                "pl-1\/12": "8.33% (1\/12 container width)",
+                                "pl-1\/8": "12.5% (1\/8 container width)",
+                                "pl-1\/4": "25% (1\/4 container width)"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_626868e79567c",
+                    "label": "Right",
+                    "name": "right",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_626868e79567d",
+                            "label": "Right margin",
+                            "name": "right_margin",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pr-0": "Default (Row dependant)",
+                                "pr-4": "1 (16px)",
+                                "pr-8": "2 (32px)",
+                                "pr-12": "3 (48px)",
+                                "pr-16": "4 (64px)",
+                                "pr-1\/12": "8.33% (1\/12 container width)",
+                                "pr-1\/8": "12.5% (1\/8 container width)",
+                                "pr-1\/4": "25% (1\/4 container width)"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_626868e79567e",
+                            "label": "Right padding",
+                            "name": "right_padding",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pr-0": "Default (Row dependant)",
+                                "pr-4": "1 (16px)",
+                                "pr-8": "2 (32px)",
+                                "pr-12": "3 (48px)",
+                                "pr-16": "4 (64px)",
+                                "pr-1\/12": "8.33% (1\/12 container width)",
+                                "pr-1\/8": "12.5% (1\/8 container width)",
+                                "pr-1\/4": "25% (1\/4 container width)"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_62686d1fb03d3",
+                    "label": "<h3 style=\"font-weight: bold; text-transform: uppercase;\">Alignment settings<\/h3>",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "<h4 style=\"color: #51606A;\">Click to toggle settings view.<\/h4>\r\n<p>Alignment arranges the content either Left aligned (Default), Centered aligned, or Right aligned.<\/p>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_62686ab0342d2",
+                    "label": "Alignment",
+                    "name": "alignment",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "start": "Left align",
+                        "center": "Center align",
+                        "end": "Right align"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "start",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_62686d1eb03d2",
+                    "label": "<h3 style=\"font-weight: bold; text-transform: uppercase;\">Column settings<\/h3>",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "<h4 style=\"color: #51606A;\">Click to toggle settings view.<\/h4>\r\n<p>The number of columns available is set at a max of 12. Choose between 8, 10, and 12 columns to change the width of a rows content. Content will automatically span all 12 columns on mobile sized screens unless a specifically mentioned.<\/p>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_62686c13a53f3",
+                    "label": "Number of columns",
+                    "name": "number_of_columns",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "w-full": "12 of 12 columns",
+                        "w-full lg:w-5\/6": "10 of 12 columns",
+                        "w-full lg:w-3\/4": "8 of 12 columns"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "w-full",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_626abf9fd69fe",
+                    "label": "<h3 style=\"font-weight: bold; text-transform: uppercase;\">Background colour settings<\/h3>",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "<h4 style=\"color: #51606A;\">Click to toggle settings view.<\/h4>\r\n<p>Choose a background colour. Default is white.<\/p>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_626abfa2d69ff",
+                    "label": "Background Colour",
+                    "name": "background_colour",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "bg-white": "White",
+                        "bg-brand-gray": "Light Gray"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "bg-white",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1651188851
+}
