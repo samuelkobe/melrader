@@ -9,7 +9,7 @@
                         <div class="flex flex-col <?php acf_row_padding($tp, $bp, $lp, $rp); ?> items-<?php echo $ra; ?>">
 
                             <h2 class="text-xl lg:text-2xl 2xl:text-4xl mb-1 lg:mb-2 font-title tracking-wide"><?php the_sub_field( 'video_resources_header' ); ?></h2>
-                            <div class="bg-brand-alt h-1 w-12"></div>
+                            <div class="bg-brand-main h-1 w-12"></div>
 
                             <?php if ( have_rows( 'video' ) ) : ?>                                
                                 <div class="w-full inline-flex flex-col lg:flex-row gap-4 mt-4 lg:mt-8">

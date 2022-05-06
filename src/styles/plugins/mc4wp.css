@@ -20,7 +20,7 @@ margin-top: 0 !important;
     focus:text-brand-black
     border-2
     border-transparent
-    focus:border-brand-alt
+    focus:border-brand-main
     transition-colors
     duration-200
 }

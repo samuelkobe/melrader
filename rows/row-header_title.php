@@ -11,7 +11,7 @@
                         <div class="flex flex-col <?php acf_row_padding($tp, $bp, $lp, $rp); ?> items-<?php echo $ra; ?>">   
 
                             <h2 class="text-3xl lg:text-4xl 2xl:text-5xl font-title tracking-wide"><?php the_sub_field( 'content' ); ?></h2>
-                            <div class="bg-brand-alt h-1 w-12 mt-1 2xl:mt-2"></div>
+                            <div class="bg-brand-main h-1 w-12 mt-1 2xl:mt-2"></div>
 
                         </div>  
 

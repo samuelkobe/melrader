@@ -35,13 +35,13 @@
 
 					<?php if ( get_sub_field( 'page_hero' ) == 1 ) : // this checks to see if the page hero is active. If not use some inline JS to account for header menu spacing.?>
 						<header id="header" :class="[!view.atTopOfPage ? 'h-16' : 'h-16 lg:h-28']" class="w-full flex flex-wrap transition-height duration-200 fixed top-0 z-50" role="banner">
-							<nav id="nav" :class="[!view.atTopOfPage ? 'bg-brand-main' : 'bg-brand-main lg:bg-transparent']"  class="flex flex-wrap items-start lg:items-center justify-between w-full h-full relative">
+							<nav id="nav" :class="[!view.atTopOfPage ? 'bg-brand-black' : 'bg-brand-black lg:bg-transparent']"  class="flex flex-wrap items-start lg:items-center justify-between w-full h-full relative">
 								<?php get_template_part('parts/nav') ?>
 							</nav>
 						</header>
 					<?php else: ?>
 						<header id="header" class="w-full flex flex-wrap transition-height h-16 duration-200 fixed top-0 z-50" role="banner">
-							<nav id="nav" class="flex flex-wrap items-start lg:items-center justify-between bg-brand-main w-full h-full relative">
+							<nav id="nav" class="flex flex-wrap items-start lg:items-center justify-between bg-brand-black w-full h-full relative">
 								<?php get_template_part('parts/nav') ?>
 							</nav>
 						</header>

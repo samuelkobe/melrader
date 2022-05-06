@@ -4,7 +4,7 @@
 
 .wpcf7-form input,
 .wpcf7-form textarea {
-  @apply text-base xl:text-lg h-8 xl:h-12 p-2 text-brand-black rounded border-2 border-brand-darkgray placeholder-brand-main focus:outline-none outline-none focus:text-brand-black focus:border-brand-alt transition-colors duration-200 w-full;
+  @apply text-base xl:text-lg h-8 xl:h-12 p-2 text-brand-black rounded border-2 border-brand-darkgray placeholder-brand-main focus:outline-none outline-none focus:text-brand-black focus:border-brand-main transition-colors duration-200 w-full;
 }
 
 .wpcf7-form input {

@@ -10,8 +10,16 @@
 						<?php // footer image part ?>
 						<?php get_template_part('parts/footer/image') ?>
 
+						<div class="w-full md:w-1/4 lg:w-1/6 grow order-2 lg:order-1 mb-8 lg:mb-0">
+							<h3 class="text-lg lg:text-2xl text-white font-bold mb-4 lg:mb-6">Contact</h4>
+							<div class="w-full flex flex-col xl:leading-8">
+								<a class="hover:text-brand-alt transition-colors duration-300 text-base xl:text-xl" href="tel:<?php the_field( 'phone_number', 'option' ); ?>"><?php the_field( 'phone_number_text', 'option' ); ?></a>
+								<a class="hover:text-brand-alt transition-colors duration-300 text-base xl:text-lg" href="mailto:<?php the_field( 'contact_email', 'option' ); ?>?subject=Inquiry from the <?php bloginfo('name'); ?> website" target="_blank"><?php the_field( 'contact_email_link_text', 'option' ); ?></a>
+							</div>
+						</div>
+
 						<?php // Footer navigation part ?>
-						<div class="w-1/2 md:w-1/4 lg:w-1/6 order-3 lg:order-2 mb-8 lg:mb-0">
+						<div class="w-1/2 md:w-1/4 lg:w-1/6 grow order-3 lg:order-2 mb-8 lg:mb-0">
 							<h3 class="text-lg lg:text-2xl text-white font-bold mb-4 lg:mb-6">Resources</h4>
 							<div class="w-full flex flex-col">
 								<?php footer_nav(); ?>

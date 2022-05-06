@@ -7,11 +7,11 @@ nav ul li a.menu-anchor {
 }
 
 nav ul li a.menu-anchor:hover {
-    @apply text-brand-alt lg:text-inherit lg:border-b-3 lg:border-brand-alt;
+    @apply text-brand-main lg:text-inherit lg:border-b-3 lg:border-brand-main;
 }
 
 nav ul li.active a.menu-anchor {
-    @apply text-brand-alt lg:text-inherit lg:border-b-3 lg:border-brand-alt;
+    @apply text-brand-main lg:text-inherit lg:border-b-3 lg:border-brand-main;
 }
 
 nav ul li:hover ul.sub-menu {

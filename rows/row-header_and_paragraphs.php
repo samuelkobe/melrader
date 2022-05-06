@@ -15,7 +15,7 @@
                             <?php endif; ?>
 
                             <h2 class="text-3xl lg:text-4xl 2xl:text-5xl my-1 lg:my-2 font-title tracking-wide"><?php the_sub_field( 'header_content' ); ?></h2>
-                            <div class="bg-brand-alt h-1 w-12"></div>
+                            <div class="bg-brand-main h-1 w-12"></div>
                             <?php if ( have_rows( 'paragraphs' ) ) : ?>
                                 <?php while ( have_rows( 'paragraphs' ) ) : the_row(); ?>
                                     <p class="text-base lg:text-lg mt-4"><?php the_sub_field( 'paragraph_content' ); ?></p>

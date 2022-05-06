@@ -82,7 +82,7 @@
                                 <?php $button_link = get_sub_field( 'button_link' ); ?>            
                                 <?php if ( $button_link ) : ?>
                                 <div class="flex flex-row relative">
-                                    <a class="<?php echo $button; ?>" href="<?php echo esc_url( $button_link['url'] ); ?>" target="<?php echo esc_attr( $button_link['target'] ); ?>"><?php echo esc_html( $button_link['title'] ); ?></a>
+                                    <a class="button main mt-4 lg:mt-8" href="<?php echo esc_url( $button_link['url'] ); ?>" target="<?php echo esc_attr( $button_link['target'] ); ?>"><?php echo esc_html( $button_link['title'] ); ?></a>
                                 </div>
                                 <?php endif; ?>
                             <?php else : ?>

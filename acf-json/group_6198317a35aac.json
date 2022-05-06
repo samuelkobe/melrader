@@ -16,8 +16,8 @@
                 "id": ""
             },
             "choices": {
-                "main": "<span style=\"color:#51606A; font-weight: bold;\">Ocean Grey<\/span>",
-                "alt": "<span style=\"color:#85B798; font-weight: bold;\">Ocean Green<\/span>",
+                "main": "<span style=\"color:#729F8F; font-weight: bold;\">Green<\/span>",
+                "alt": "<span style=\"color:#967553; font-weight: bold;\">Brown<\/span>",
                 "black": "<span style=\"color:#231F20; font-weight: bold;\">Black<\/span>",
                 "none": "<span style=\"color:#B9B9B9;\">None<\/span>"
             },
@@ -47,5 +47,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650405463
+    "modified": 1651620323
 }

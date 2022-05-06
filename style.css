@@ -6,7 +6,7 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/wp-theme.css ***!
   \************************************************************************************************************************************************************/
 /*
-Theme Name: Mel Rader Healing Practices
+Theme Name: Mel Rader Health Practices
 Theme URI: https://www.webok.ca/starter-theme
 Description: Web Ok Solutions Inc. starter wordpress theme, an extension of HTML5Blank's starter theme.
 Version: 1.0.0
@@ -695,14 +695,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .z-1{
   z-index: 1;
 }
+.order-2{
+  order: 2;
+}
 .order-3{
   order: 3;
 }
 .order-1{
   order: 1;
-}
-.order-2{
-  order: 2;
 }
 .order-4{
   order: 4;
@@ -1182,8 +1182,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-11\/12{
   width: 91.666667%;
 }
-.w-\[320px\]{
-  width: 320px;
+.w-\[240px\]{
+  width: 240px;
 }
 .min-w-0{
   min-width: 0px;
@@ -1242,6 +1242,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-shrink: 0;
 }
 .flex-grow{
+  flex-grow: 1;
+}
+.grow{
   flex-grow: 1;
 }
 .border-collapse{
@@ -1398,6 +1401,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-rows-2{
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 .flex-row{
   flex-direction: row;
@@ -3329,13 +3335,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .filter{
   filter: var(--tw-filter);
 }
-.transition-height{
-  transition-property: height;
+.transition-colors{
+  transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.transition-colors{
-  transition-property: background-color, border-color, color, fill, stroke;
+.transition-height{
+  transition-property: height;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -3384,11 +3390,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .delay-1000{
   transition-delay: 1000ms;
 }
-.duration-200{
-  transition-duration: 200ms;
-}
 .duration-300{
   transition-duration: 300ms;
+}
+.duration-200{
+  transition-duration: 200ms;
 }
 .duration-500{
   transition-duration: 500ms;
@@ -3573,16 +3579,20 @@ body{
 .hover\:fill-brand-alt:hover{
   fill: #967553;
 }
-.hover\:text-\[\#46CEC3\]:hover{
-  --tw-text-opacity: 1;
-  color: rgb(70 206 195 / var(--tw-text-opacity));
-}
 .hover\:text-brand-alt:hover{
   --tw-text-opacity: 1;
   color: rgb(150 117 83 / var(--tw-text-opacity));
 }
+.hover\:text-\[\#46CEC3\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(70 206 195 / var(--tw-text-opacity));
+}
 .hover\:opacity-100:hover{
   opacity: 1;
+}
+.focus\:border-brand-main:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(114 159 143 / var(--tw-border-opacity));
 }
 .focus\:border-brand-alt:focus{
   --tw-border-opacity: 1;
@@ -3645,8 +3655,8 @@ body{
   .sm\:w-11\/12{
     width: 91.666667%;
   }
-  .sm\:w-\[400px\]{
-    width: 400px;
+  .sm\:w-\[320px\]{
+    width: 320px;
   }
   .sm\:text-3xl{
     font-size: 1.875rem;
@@ -3779,14 +3789,14 @@ body{
   .lg\:z-20{
     z-index: 20;
   }
+  .lg\:order-1{
+    order: 1;
+  }
   .lg\:order-2{
     order: 2;
   }
   .lg\:order-3{
     order: 3;
-  }
-  .lg\:order-1{
-    order: 1;
   }
   .lg\:order-4{
     order: 4;
@@ -3881,6 +3891,9 @@ body{
   .lg\:h-16{
     height: 4rem;
   }
+  .lg\:h-1\/4{
+    height: 25%;
+  }
   .lg\:w-96{
     width: 24rem;
   }
@@ -3916,9 +3929,6 @@ body{
   }
   .lg\:w-1\/4{
     width: 25%;
-  }
-  .lg\:w-full{
-    width: 100%;
   }
   .lg\:translate-y-0{
     --tw-translate-y: 0px;
@@ -3967,9 +3977,9 @@ body{
   .lg\:border-none{
     border-style: none;
   }
-  .lg\:border-brand-alt{
+  .lg\:border-white{
     --tw-border-opacity: 1;
-    border-color: rgb(150 117 83 / var(--tw-border-opacity));
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
   }
   .lg\:border-transparent{
     border-color: transparent;
@@ -4242,13 +4252,17 @@ body{
   .xl\:pb-2{
     padding-bottom: 0.5rem;
   }
-  .xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   .xl\:text-4xl{
     font-size: 2.25rem;
@@ -4265,10 +4279,6 @@ body{
   .xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-  .xl\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
   .xl\:leading-snug{
     line-height: 1.375;
@@ -4330,6 +4340,9 @@ body{
   }
   .\32xl\:w-5\/12{
     width: 41.666667%;
+  }
+  .\32xl\:w-full{
+    width: 100%;
   }
   .\32xl\:px-0{
     padding-left: 0px;
@@ -4411,7 +4424,7 @@ nav ul li a.menu-anchor:hover {
 
     --tw-text-opacity: 1;
 
-    color: rgb(133 183 152 / var(--tw-text-opacity))
+    color: rgb(114 159 143 / var(--tw-text-opacity))
 }
 
 @media (min-width: 1024px) {
@@ -4425,7 +4438,7 @@ nav ul li a.menu-anchor:hover {
 
         --tw-border-opacity: 1;
 
-        border-color: rgb(133 183 152 / var(--tw-border-opacity))
+        border-color: rgb(114 159 143 / var(--tw-border-opacity))
     }
 
     nav ul li a.menu-anchor:hover {
@@ -4438,7 +4451,7 @@ nav ul li.active a.menu-anchor {
 
     --tw-text-opacity: 1;
 
-    color: rgb(133 183 152 / var(--tw-text-opacity))
+    color: rgb(114 159 143 / var(--tw-text-opacity))
 }
 
 @media (min-width: 1024px) {
@@ -4452,7 +4465,7 @@ nav ul li.active a.menu-anchor {
 
         --tw-border-opacity: 1;
 
-        border-color: rgb(133 183 152 / var(--tw-border-opacity))
+        border-color: rgb(114 159 143 / var(--tw-border-opacity))
     }
 
     nav ul li.active a.menu-anchor {
@@ -4630,14 +4643,14 @@ nav ul li ul.sub-menu li a.menu-anchor {
 
     --tw-bg-opacity: 1;
 
-    background-color: rgb(81 96 106 / var(--tw-bg-opacity))
+    background-color: rgb(114 159 143 / var(--tw-bg-opacity))
 }
 
 .button.alt {
 
     --tw-bg-opacity: 1;
 
-    background-color: rgb(133 183 152 / var(--tw-bg-opacity))
+    background-color: rgb(150 117 83 / var(--tw-bg-opacity))
 }
 /*!**************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/components/video_embed.css ***!
@@ -4727,7 +4740,7 @@ footer ul li a {
 }
 footer ul li a:hover {
     --tw-text-opacity: 1;
-    color: rgb(133 183 152 / var(--tw-text-opacity))
+    color: rgb(150 117 83 / var(--tw-text-opacity))
 }
 /*!*****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/plugins/mc4wp.css ***!
@@ -4769,17 +4782,17 @@ footer #email_newsletter {
 
 #mc4wp-form-1 .mc4wp-email::-moz-placeholder, #mc4wp-form-1 .mc4wp-first_name::-moz-placeholder, #mc4wp-form-1 .mc4wp-last_name::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgb(81 96 106 / var(--tw-placeholder-opacity));
+  color: rgb(114 159 143 / var(--tw-placeholder-opacity));
 }
 
 #mc4wp-form-1 .mc4wp-email:-ms-input-placeholder, #mc4wp-form-1 .mc4wp-first_name:-ms-input-placeholder, #mc4wp-form-1 .mc4wp-last_name:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgb(81 96 106 / var(--tw-placeholder-opacity));
+  color: rgb(114 159 143 / var(--tw-placeholder-opacity));
 }
 
 #mc4wp-form-1 .mc4wp-email::placeholder, #mc4wp-form-1 .mc4wp-first_name::placeholder, #mc4wp-form-1 .mc4wp-last_name::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgb(81 96 106 / var(--tw-placeholder-opacity));
+  color: rgb(114 159 143 / var(--tw-placeholder-opacity));
 }
 
 #mc4wp-form-1 .mc4wp-email, #mc4wp-form-1 .mc4wp-first_name, #mc4wp-form-1 .mc4wp-last_name {
@@ -4792,7 +4805,7 @@ footer #email_newsletter {
 
 #mc4wp-form-1 .mc4wp-email:focus, #mc4wp-form-1 .mc4wp-first_name:focus, #mc4wp-form-1 .mc4wp-last_name:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(133 183 152 / var(--tw-border-opacity));
+  border-color: rgb(114 159 143 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(35 31 32 / var(--tw-text-opacity));
   outline: 2px solid transparent;
@@ -4833,7 +4846,7 @@ footer #email_newsletter {
   justify-content: center;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(81 96 106 / var(--tw-bg-opacity));
+  background-color: rgb(114 159 143 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
@@ -4891,7 +4904,7 @@ footer #email_newsletter {
 
 #mc4wp-form-1 .mc4wp-response .mc4wp-success {
   --tw-text-opacity: 1;
-  color: rgb(133 183 152 / var(--tw-text-opacity));
+  color: rgb(150 117 83 / var(--tw-text-opacity));
 }
 /*!*****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/plugins/wpcf7.css ***!
@@ -4916,17 +4929,17 @@ footer #email_newsletter {
 
 .wpcf7-form input::-moz-placeholder, .wpcf7-form textarea::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgb(81 96 106 / var(--tw-placeholder-opacity));
+  color: rgb(114 159 143 / var(--tw-placeholder-opacity));
 }
 
 .wpcf7-form input:-ms-input-placeholder, .wpcf7-form textarea:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgb(81 96 106 / var(--tw-placeholder-opacity));
+  color: rgb(114 159 143 / var(--tw-placeholder-opacity));
 }
 
 .wpcf7-form input::placeholder, .wpcf7-form textarea::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgb(81 96 106 / var(--tw-placeholder-opacity));
+  color: rgb(114 159 143 / var(--tw-placeholder-opacity));
 }
 
 .wpcf7-form input, .wpcf7-form textarea {
@@ -4939,7 +4952,7 @@ footer #email_newsletter {
 
 .wpcf7-form input:focus, .wpcf7-form textarea:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(133 183 152 / var(--tw-border-opacity));
+  border-color: rgb(114 159 143 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(35 31 32 / var(--tw-text-opacity));
   outline: 2px solid transparent;
@@ -4991,7 +5004,7 @@ footer #email_newsletter {
   border-radius: 0.25rem;
   border-style: none;
   --tw-bg-opacity: 1;
-  background-color: rgb(81 96 106 / var(--tw-bg-opacity));
+  background-color: rgb(114 159 143 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;

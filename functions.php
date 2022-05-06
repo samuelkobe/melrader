@@ -40,7 +40,7 @@ if (function_exists('add_theme_support')) {
 }
 
 function webokstarter_custom_class_replace( $html ) {
-    $html = str_replace('custom-logo', 'flex shrink w-24 lg:w-inherit', $html );
+    $html = str_replace('custom-logo', 'flex shrink w-24 lg:w-inherit p-2', $html );
     return $html;
 }
 add_filter('get_custom_logo', 'webokstarter_custom_class_replace', 10);

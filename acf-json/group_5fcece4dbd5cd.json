@@ -311,7 +311,15 @@
             "type": "flexible_content",
             "instructions": "",
             "required": 1,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_625737de82b61",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -338,62 +346,7 @@
                                 "id": ""
                             },
                             "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_60a032f792a33",
-                                    "label": "Title",
-                                    "name": "title",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "50",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
-                                {
-                                    "key": "field_60a0307d3c777",
-                                    "label": "URL",
-                                    "name": "url",
-                                    "type": "url",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "50",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": ""
-                                }
-                            ]
-                        },
-                        {
-                            "key": "field_60a0306c3c776",
-                            "label": "Icon SVG Embed",
-                            "name": "icon",
-                            "type": "wysiwyg",
-                            "instructions": "Add a SVG icon embed from <a href=\"iconmonstr.com\" target=\"_blank\">Icon Monstr<\/a>",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "75",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "text",
-                            "media_upload": 0,
-                            "toolbar": "full",
-                            "delay": 0
+                            "sub_fields": []
                         },
                         {
                             "key": "field_6266d0010d39b",
@@ -732,5 +685,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651610219
+    "modified": 1651696490
 }
