@@ -27,8 +27,8 @@ if (function_exists('add_theme_support')) {
     load_theme_textdomain('web-ok-starter', get_template_directory() . '/languages');
 
     // Custom logo support
-    $logo_width  = 256;
-    $logo_height = 208;
+    $logo_width  = 320;
+    $logo_height = 188;
 
     $logo_defaults = array(
         'height'               => $logo_height,
@@ -40,7 +40,7 @@ if (function_exists('add_theme_support')) {
 }
 
 function webokstarter_custom_class_replace( $html ) {
-    $html = str_replace('custom-logo', 'flex shrink w-24 lg:w-inherit p-2', $html );
+    $html = str_replace('custom-logo', 'flex shrink w-auto h-full object-contain p-1', $html );
     return $html;
 }
 add_filter('get_custom_logo', 'webokstarter_custom_class_replace', 10);
@@ -99,7 +99,7 @@ function webokstarter_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul class="flex flex-col lg:flex-row relative w-full h-auto pt-16 pb-6 lg:pt-0 lg:pb-0 lg:items-center lg:justify-end text-white font-medium text-3xl lg:text-xl xl:text-2xl lg:w-auto space-y-2 lg:space-y-0 lg:space-x-2">%3$s</ul>', // The items_wrap lets us put Tailwind CSS classes on the menu's <ul> element.
+		'items_wrap'      => '<ul class="flex flex-col lg:flex-row relative w-full h-auto pt-16 pb-6 lg:pt-0 lg:pb-0 lg:items-center lg:justify-end text-white font-medium text-3xl lg:text-xl lg:w-auto space-y-2 lg:space-y-0 lg:space-x-2">%3$s</ul>', // The items_wrap lets us put Tailwind CSS classes on the menu's <ul> element.
 		'depth'           => 0,
         'add_li_class'    => '',
 		'walker'          => false
@@ -172,6 +172,53 @@ function add_slug_to_body_class($classes)
 
     return $classes;
 }
+
+// widgets
+// If Dynamic Sidebar Exists
+if (function_exists('register_sidebar'))
+{
+    // Define Sidebar Widget Area 1
+    register_sidebar(array(
+        'name' => __('Widget Area 1', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-1',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 2', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+}
+
+// restrict searchs to only posts
+function SearchFilter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts','SearchFilter');
+
+/**
+ * Halt the main query in the case of an empty search 
+ */
+add_filter( 'posts_search', function( $search, \WP_Query $q )
+{
+    if( ! is_admin() && empty( $search ) && $q->is_search() && $q->is_main_query() )
+        $search .=" AND 0=1 ";
+
+    return $search;
+}, 10, 2 );
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
 function webokstarter_wp_pagination()

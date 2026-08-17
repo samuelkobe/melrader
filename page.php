@@ -42,7 +42,7 @@
 						
 						<h2 class="text-sm lg:text-lg font-bold text-center"><?php the_field( 'newsletter_message', 'option' ); ?></h2>
 						<div class="w-full sm:w-5/6 lg:w-1/2 2xl:w-1/4 lg:mx-auto mt-2">
-							<?php the_field( 'newsletter_form_embed', 'option' ); ?>
+							<?php echo get_field( 'newsletter_form_embed', 'option' ); ?>
 						</div>
 					</div>
 				<?php else : ?>

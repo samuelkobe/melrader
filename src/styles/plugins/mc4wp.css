@@ -1,15 +1,16 @@
 #mc4wp-form-1 .form-wrapper {
-    @apply flex flex-col space-y-3;
+  @apply flex flex-col space-y-3;
 }
 
 footer #email_newsletter {
-@apply mb-3 last:mb-0;
-margin-top: 0 !important;
+  @apply mb-3 last:mb-0;
+  margin-top: 0 !important;
 }
 
-#mc4wp-form-1 .mc4wp-email, #mc4wp-form-1 .mc4wp-first_name, #mc4wp-form-1 .mc4wp-last_name {
-    @apply
-    text-base xl:text-lg
+#mc4wp-form-1 .mc4wp-email,
+#mc4wp-form-1 .mc4wp-first_name,
+#mc4wp-form-1 .mc4wp-last_name {
+  @apply text-base xl:text-lg
     h-8 xl:h-12
     p-2
     text-brand-black
@@ -22,21 +23,22 @@ margin-top: 0 !important;
     border-transparent
     focus:border-brand-main
     transition-colors
-    duration-200
+    duration-200;
 }
 
 #mc4wp-form-1 .submit-wrapper {
-    @apply flex flex-col justify-start items-start xl:flex-row mt-4;
+  @apply flex flex-col justify-start items-start xl:flex-row mt-4;
 }
 
 #mc4wp-form-1 .submit {
-    @apply w-32 xl:w-40 justify-center pt-2 pb-1 xl:pt-3 xl:pb-2 px-3 xl:px-6 rounded no-underline inline-flex text-white font-title tracking-widest text-xl xl:text-2xl leading-normal xl:leading-tight bg-brand-main opacity-90 hover:opacity-100 transition-opacity duration-200 uppercase cursor-pointer;
+  @apply w-auto justify-center pt-2 pb-1 xl:pt-3 xl:pb-2 px-3 xl:px-6 rounded no-underline inline-flex text-white font-title tracking-widest text-xl xl:text-2xl leading-normal xl:leading-tight bg-brand-main opacity-90 hover:opacity-100 transition-opacity duration-200 uppercase cursor-pointer;
 }
 
-#mc4wp-form-1 .mc4wp-response .mc4wp-alert, #mc4wp-form-1 .mc4wp-response .mc4wp-success {
-    @apply mt-4;
+#mc4wp-form-1 .mc4wp-response .mc4wp-alert,
+#mc4wp-form-1 .mc4wp-response .mc4wp-success {
+  @apply mt-4;
 }
 
 #mc4wp-form-1 .mc4wp-response .mc4wp-success {
-    @apply text-brand-alt;
+  @apply text-brand-alt;
 }

@@ -474,12 +474,13 @@
                         "id": ""
                     },
                     "choices": {
+                        "bg-transparent": "Transparent",
                         "bg-white": "White",
                         "bg-brand-gray": "Light Gray"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
-                    "default_value": "bg-white",
+                    "default_value": "bg-transparent",
                     "layout": "horizontal",
                     "return_format": "value",
                     "save_other_choice": 0
@@ -505,5 +506,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651188851
+    "modified": 1656707050
 }
